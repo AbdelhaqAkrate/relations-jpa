@@ -11,10 +11,10 @@ public class EmployeEntity {
     private int id;
     @Basic
     @Column(name = "name")
-    private int name;
+    private String name;
     @Basic
     @Column(name = "adresse")
-    private int adresse;
+    private String adresse;
     @Basic
     @Column(name = "phone")
     private int phone;
@@ -30,19 +30,19 @@ public class EmployeEntity {
         this.id = id;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public int getAdresse() {
+    public String getAdresse() {
         return adresse;
     }
 
-    public void setAdresse(int adresse) {
+    public void setAdresse(String adresse) {
         this.adresse = adresse;
     }
 
@@ -52,5 +52,13 @@ public class EmployeEntity {
 
     public void setIdDep(DepartementEntity idDep) {
         this.idDep = idDep;
+    }
+
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
     }
 }
